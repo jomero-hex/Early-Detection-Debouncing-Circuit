@@ -19,3 +19,4 @@ procedure to design the early debouncing scheme.
 the number of rising edges with and without the debouncer, it then shows the count on
 the 7-segment display. Build this circuit.
 
+![Diagram](https://github.com/jomero-hex/Early-Detection-Debouncing-Circuit/blob/main/Capture.PNG)
