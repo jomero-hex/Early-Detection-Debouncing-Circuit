@@ -106,18 +106,9 @@ module earlyDbcCkt
      end
      
    //3. output logic
-    /*
     assign db =( (state_reg == w1_1 ||      //pure moore machine, slight delay from btn to dbounce out
-                        state_reg == w1_2 ||         //moore machine = output depends only on the current state
-                        state_reg == w1_3 ||
-                        state_reg == one) );
-    
-    */   
-    assign db =( ((state_reg == zero && btn) ||                //mealy, no delay,  instant, Mealy = output depends on current state and input
-                        state_reg == w1_1 ||                              // rest is Moore
-                        state_reg == w1_2 ||                           
-                        state_reg == w1_3 ||
-                        state_reg == one) );
-  
+                  state_reg == w1_2 ||      //moore machine = output depends only on the current state
+                  state_reg == w1_3 ||
+                  state_reg == one) );
                                                                
 endmodule
